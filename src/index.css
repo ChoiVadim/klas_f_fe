@@ -18,3 +18,8 @@ body {
 
 }
 
+
+#main-content {
+  border-top-left-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1), 0 0 15px rgba(0,0,0,0.05);
+}

@@ -23,12 +23,12 @@ export default function HomePage() {
         <Sidebar />
 
         {/* Main Content */}
-        <div className="flex-1 space-y-6 shadow-[0_4px_10px_rgba(0,0,0,0.1),0_0_15px_rgba(0,0,0,0.05)] bg-background rounded-tl-3xl">
+        <div className="flex-1 space-y-6 bg-background" id="main-content">
           {/* Top Row */}
           <div className="grid grid-cols-3 grid-rows-1 h-full ">
 
             {/* Left Column: Welcome Section */}
-            <div className="col-span-1 row-span-2 bg-background pl-32 rounded-3xl pt-48 w-full">
+            <div className="col-span-1 row-span-2 pl-32 rounded-3xl pt-48 w-full">
               <h1 className="text-7xl font-bold text-card-foreground">
                 최바딤
               </h1>
@@ -44,7 +44,7 @@ export default function HomePage() {
                   <div className="w-16 h-16 bg-primary rounded-full" />
                   <div>
                     <div className="font-bold text-card-foreground text-2xl">최바딤</div>
-                    <div className="text-base text-muted-foreground text-xl">2022203502 미디어커뮤니케이션학부</div>
+                    <div className="text-base text-muted-foreground text-xl">2022203502 소프트웨어학과 3학년</div>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export default function HomePage() {
                     <div className="text-card-foreground font-bold text-5xl">70/133</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md hover:bg-primary-light transition-colors text-center w-full aspect-square flex flex-col justify-center z-10">
-                    <div className="text-card-foreground">Major </div>
+                    <div className="text-card-foreground">Major Credits</div>
                     <div className="text-card-foreground font-bold text-5xl">24/50</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md hover:bg-primary-light transition-colors text-center w-full aspect-square flex flex-col justify-center z-10">
