@@ -1,87 +1,90 @@
-import { Link } from 'react-router-dom';
 import Header from '../components/header';
 import Sidebar from '../components/sidebar';
+import Swiper from '../components/swiper';
+import UserImage from '../assets/kw-photo.jpg'
 import ParticlesBackground from '../components/ui/ParticlesBackground'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-hidden">
       <ParticlesBackground />
       <Header />
         
-
       {/* Main Layout */}
-      <div className="flex bg-white">
-        <Sidebar />
+      <div className="flex bg-white h-[calc(100vh)] md:h-[calc(100vh-5rem)]">
+        <Sidebar/>
 
         {/* Main Content */}
-        <div className="flex-1 space-y-6 bg-background" id="main-content">
+        <div className="flex-1 bg-background overflow-y-auto ml-4 md:ml-0" id="main-content">
           {/* Top Row */}
-          <div className="grid grid-cols-3 grid-rows-1 h-full ">
+          <div className="grid grid-cols-1 md:grid-cols-3">
 
             {/* Left Column: Welcome Section */}
-            <div className="col-span-1 row-span-2 pl-32 rounded-3xl pt-48 w-full">
-              <h1 className="text-7xl font-bold text-card-foreground">
+            <div className="col-span-1 p-4 pt-6 md:pt-16 md:pl-36 md:pt-36 w-full">
+              <h1 className="text-6xl font-bold text-card-foreground">
                 최바딤
               </h1>
-              <h1 className="text-4xl font-bold text-card-foreground">
-                WELCOME TO KLAS-F! 
+              <h1 className="text-3xl font-bold text-card-foreground">
+                WELCOME TO KLAS-F
               </h1>
-              <h2 className="text-lg font-medium mb-8">
-                KLAS-F easy access to everything you need 😀 
+              <h2 className="font-medium mb-8">
+                KLAS-F easy access to everything you need! 🎉
               </h2>
 
+              {/*User card*/ }
               <div className="bg-card rounded-lg p-6 shadow-md w-full relative">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-primary rounded-full" />
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                    <img
+                      src={UserImage}
+                      alt="Profile"
+                      className="w-14 h-14 rounded-full object-cover"
+                    />
+                  </div>
+
                   <div>
-                    <div className="font-bold text-card-foreground text-2xl">최바딤</div>
-                    <div className="text-base text-muted-foreground text-xl">2022203502 소프트웨어학과 3학년</div>
+                    <div className="font-bold text-card-foreground text-xl">최바딤</div>
+                    <div className="text-base text-muted-foreground text-md">2022203502 소프트웨어학과 3학년</div>
                   </div>
                 </div>
               </div>
 
               {/* INFO */}
-              <div className="mt-32">
-                <h2 className="font-bold mb-4 text-card-foreground text-2xl">💼 CREDITS</h2>
-                <div className="flex gap-4">
-                  <div className="bg-card p-4 rounded-lg shadow-md hover:bg-primary-light transition-colors text-center w-full aspect-square flex flex-col justify-center z-10">
-                    <div className="text-base text-card-foreground ">Full Credits</div>
-                    <div className="text-card-foreground font-bold text-5xl">70/133</div>
+              <div className="mt-8 md:mt-24">
+                <h2 className="font-bold mb-4 text-card-foreground text-xl">💼 CREDITS</h2>
+                <div className="flex gap-4 md:gap-6">
+                  <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
+                    <div className="text-xs md:text-sm text-card-foreground ">Full Credits</div>
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">70/133</div>
                   </div>
-                  <div className="bg-card p-4 rounded-lg shadow-md hover:bg-primary-light transition-colors text-center w-full aspect-square flex flex-col justify-center z-10">
-                    <div className="text-card-foreground">Major Credits</div>
-                    <div className="text-card-foreground font-bold text-5xl">24/50</div>
+                  <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
+                    <div className="text-xs md:text-sm text-card-foreground">Major Credits</div>
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">24/50</div>
                   </div>
-                  <div className="bg-card p-4 rounded-lg shadow-md hover:bg-primary-light transition-colors text-center w-full aspect-square flex flex-col justify-center z-10">
-                    <div className="text-card-foreground">Elective Credits</div>
-                    <div className="text-card-foreground font-bold text-5xl">12/30</div>
+                  <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
+                    <div className="text-xs md:text-sm text-card-foreground">Elective Credits</div>  
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">12/30</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Club Recommendations */}
-            <div className="col-span-2 pt-14 flex flex-col h-full pl-32">
+            {/* Right Column */}
+            <div className="col-span-2 pt-6  md:pt-14 pl-4 md:pl-32">
+
+              {/* Top Row: Main Information Section */}
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-yellow-500">📕</span>
-                <h2 className="font-bold text-card-foreground text-2xl">MAIN INFORMATION</h2>
+                <h2 className="font-bold text-card-foreground text-xl">MAIN INFORMATION</h2>
               </div>
-              <div className="flex gap-16">
+              <div className="flex md:flex-row flex-col gap-4 md:gap-16 pr-4 md:pr-16">
                 
+                {/*Card 1*/}
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                  <div className="flex items-center gap-4 p-6">
+                  <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-4">How many credits do you need?</div>
-                      <div className="text-base text-muted-foreground text-xl">  
+                      <div className="font-bold text-card-foreground text-xl mb-4">How many credits do you need?</div>
+                      <div className="text-base text-muted-foreground text-base">  
                         Credits: 66/133 49.62%<br/>
                         Major Credits: 20/60 33.33%<br/>
                         Elective Credits: 46/30<br/>
@@ -93,11 +96,12 @@ export default function HomePage() {
                   </div>
                 </div>
 
+                {/*Card 2*/}
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                  <div className="flex items-center gap-4 p-6">
+                  <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-4">How to get good scholarship?</div>
-                      <div className="text-base text-muted-foreground text-xl">  
+                      <div className="font-bold text-card-foreground text-xl mb-4">How to get good scholarship?</div>
+                      <div className="text-base text-muted-foreground text-base">  
                         Credits: 66/133 49.62%<br/>
                         Major Credits: 20/60 33.33%<br/>
                         Elective Credits: 46/30<br/>
@@ -109,11 +113,12 @@ export default function HomePage() {
                   </div>
                 </div>
 
+                {/*Card 3*/}
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                  <div className="flex items-center gap-4 p-6">
+                  <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-4">How to get good scholarship?</div>
-                      <div className="text-base text-muted-foreground text-xl">  
+                      <div className="font-bold text-card-foreground text-xl mb-4">How to get good scholarship?</div>
+                      <div className="text-base text-muted-foreground text-md">  
                         Credits: 66/133 49.62%<br/>
                         Major Credits: 20/60 33.33%<br/>
                         Elective Credits: 46/30<br/>
@@ -128,110 +133,10 @@ export default function HomePage() {
                 
               </div>
 
-              {/* Bottom Row: Activities Section */}
-              <h2 className="font-bold mt-8 text-card-foreground text-2xl">📌 NEWS</h2>
-              <div className="p-6 mt-4 bg-card rounded-l-3xl shadow-md z-10 w-full overflow-auto">
-              <Swiper
-                slidesPerView={3}
-                centeredSlides={true}
-                spaceBetween={0}
-                pagination={{
-                  type: 'fraction',
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="mySwiper"
-                >
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                  
-                <SwiperSlide >
-                  <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg flex items-center aspect-square max-h-96">
-                    <h1 className="text-card-foreground text-xl font-bold">
-                      [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                    </h1>
-                    <p className="text-muted-foreground text-sm">
-                      The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                    </p>
-                  </a>
-                </SwiperSlide>
-                
-              </Swiper>
+              {/* News */}
+              <h2 className="font-bold pt-10 md:mt-2 mb-4 text-card-foreground text-xl">📌 NEWS</h2>
+              <div className="bg-card rounded-l-3xl mb-6 md:mb-0 shadow-md z-10 overflow-auto">
+                <Swiper/>
               </div>
 
             </div>
