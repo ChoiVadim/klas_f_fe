@@ -20,8 +20,8 @@ export default function TodosPage() {
                         Subjects
                     </h1>
                     <h2 className="font-medium mb-8 mr-10">
-                        All Information, files and tips about subjects in one place! 🖐 
-                    </h2>   
+                        All Information, files and tips about the subjects in one place! 🖐 
+                    </h2>
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 md:mr-16">
                         <Link to="/subjects/algorithm" className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                             <div className="flex w-full justify-center items-center">

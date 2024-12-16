@@ -83,14 +83,15 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">How many credits do you need?</div>
+                      <div className="font-bold text-card-foreground text-xl mb-4">Credits to go</div>
                       <div className="text-base text-muted-foreground text-base">  
-                        Credits: 66/133 49.62%<br/>
+                        Total: 66/133 49.62%<br/>
                         Major Credits: 20/60 33.33%<br/>
                         Elective Credits: 46/30<br/>
                         Average Score: 3.97<br/>
-                        Credits for each semesters: 16.75<br/>
-                        Major Credits for each semesters: 10.0
+                        Each semester to take<br/>
+                        Overall: 16.75<br/>
+                        Major Credits: 10.0
                       </div>
                     </div>
                   </div>
@@ -100,14 +101,15 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">How to get good scholarship?</div>
+                      <div className="font-bold text-card-foreground text-xl mb-4">Scholarship conditions</div>
                       <div className="text-base text-muted-foreground text-base">  
-                        Credits: 66/133 49.62%<br/>
-                        Major Credits: 20/60 33.33%<br/>
-                        Elective Credits: 46/30<br/>
-                        Average Score: 3.97<br/>
-                        Credits for each semesters: 16.75<br/>
-                        Major Credits for each semesters: 10.0
+                        100% - GPA 4.3+<br/>
+                        70% - GPA 4.0 - 4.29<br/>
+                        50% - GPA 3.5 - 3.99<br/>
+                        30% - GPA 3.0 - 3.49<br/>
+                        <br/>
+                        No scholarship<br/>
+                        GPA is under 3.0
                       </div>
                     </div>
                   </div>
@@ -117,7 +119,7 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">How to get good scholarship?</div>
+                      <div className="font-bold text-card-foreground text-xl mb-4">GPA calculator</div>
                       <div className="text-base text-muted-foreground text-md">  
                         1. First of all, your TOPIK result must be both valid and 4급. To keep it valid take TOPIK exam once in 1.5 years.<br/>
                         2.Second, watch your grades. Remember, GPA is an average of all of your grades.<br/>
