@@ -22,7 +22,7 @@ export default function MyPage() {
                         Subjects
                     </h1>
                     <h2 className="font-medium mb-8 mr-10">
-                        All major and elective subjects what you need in one place! 🖐 
+                        You can find here reccomended subjects for the next semester! 🖐 
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:mr-16">
                         {/* Major Subjects */}
