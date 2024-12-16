@@ -92,8 +92,8 @@ export default function HomePage() {
                       <div className="font-bold text-card-foreground text-xl mb-0.5">January:</div>
                         Dormitory application: 25.01.01 - 14<br/>
                       <div className="font-bold text-card-foreground text-xl mb-0.5">February:</div>
-                        Classes registration: 25.02.15<br/>
-                        All departments: 25.02.19<br/>
+                        Software registration: 25.02.15<br/>
+                        All departments registration: 25.02.19<br/>
                       </div>
                     </div>
                   </div>
