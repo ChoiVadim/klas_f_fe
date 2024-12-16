@@ -81,7 +81,7 @@ export default function HomePage() {
               <div className="flex md:flex-row flex-col gap-4 md:gap-4 mr-4 md:mr-4">
                 
                 {/*Card 1*/}
-                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center max-h-96  z-10 md:w-1/2">
+                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center max-h-96  z-10 md:w-2/3">
                   <div className="flex items-center">
                     <div>
 
@@ -131,7 +131,7 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center  max-h-96 z-10 md:w-1/2">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-4">Credits to graduate 📚</div>
+                      <div className="font-bold text-card-foreground text-2xl mb-4">Credits 📚</div>
                       <div className="text-base text-muted-foreground text-base"> 
                         Total: 85/133 63.91%<br/>
                         Major Credits: 43/60 71.67%<br/>
@@ -158,7 +158,7 @@ export default function HomePage() {
                             <div className="col-span-3">GPA 4.3+</div>
                           </div>
                           <div className="grid grid-cols-4">
-                            <div className="col-span-1">80%</div>
+                            <div className="col-span-1">70%</div>
                             <div className="col-span-3">GPA 4.0 - 4.29</div>
                           </div>
                           <div className="grid grid-cols-4">
@@ -171,7 +171,7 @@ export default function HomePage() {
                           </div>
                         </div>
                         <br/>
-                        Your GPA is 3.97 you will get 50% scholarship next semester!<br/>
+                        Your GPA is 3.75 you will get 50% scholarship next semester!<br/>
                         <br/>
                         <a href="https://oia.kw.ac.kr/campus/scholarship.php" target="_blank" className='text-primary text-sm underline'>More Information...</a>
                       </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
 
               {/* News */}
               <h2 className="font-bold pt-10 md:mt-2 mb-4 text-card-foreground text-xl">📌 NEWS</h2>
-              <div className="bg-card rounded-l-3xl mb-6 md:mb-0 shadow-md z-10 overflow-auto">
+              <div className="bg-card rounded-l-3xl md:mb-0 shadow-md z-10 overflow-auto">
                 <Swiper/>
               </div>
 
