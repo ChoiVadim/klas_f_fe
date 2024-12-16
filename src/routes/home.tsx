@@ -81,7 +81,7 @@ export default function HomePage() {
               <div className="flex md:flex-row flex-col gap-4 md:gap-4 mr-4 md:mr-4">
                 
                 {/*Card 1*/}
-                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center max-h-96  z-10 md:w-1/2">
+                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center max-h-96  z-10 md:w-2/3">
                   <div className="flex items-center">
                     <div>
 
@@ -131,7 +131,7 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center  max-h-96 z-10 md:w-1/2">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-4">Credits to graduate 📚</div>
+                      <div className="font-bold text-card-foreground text-2xl mb-4">Credits 📚</div>
                       <div className="text-base text-muted-foreground text-base"> 
                         Total: 85/133 63.91%<br/>
                         Major Credits: 43/60 71.67%<br/>
@@ -184,7 +184,7 @@ export default function HomePage() {
 
               {/* News */}
               <h2 className="font-bold pt-10 md:mt-2 mb-4 text-card-foreground text-xl">📌 NEWS</h2>
-              <div className="bg-card rounded-l-3xl mb-6 md:mb-0 shadow-md z-10 overflow-auto">
+              <div className="bg-card rounded-l-3xl md:mb-0 shadow-md z-10 overflow-auto">
                 <Swiper/>
               </div>
 

@@ -27,7 +27,7 @@ export default function SwiperComponent() {
                             [International Students] Information on refund of regular TOPIK II application fees for the 2024-2 semester
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                        1. Subject to application: TOPIK II applicants for the second semester of 2024 among foreign students (undergraduate and graduate students) of this school...
+                        1. Subject to application: TOPIK II applicants for the second semester of 2024 among foreign students (undergraduate and graduate...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -38,7 +38,7 @@ export default function SwiperComponent() {
                             [Bachelor] Announcement of the grade processing period for the second semester of 2024
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                            Announcement of the Second Semester of 2024 The second semester of 2024 will be announced as follows. 1. Final Exam Period: December 09 (Mon) to December 20 (Fri) 2024...
+                            Announcement of the Second Semester of 2024 The second semester of 2024 will be announced as follows. 1. Final Exam Period: December...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -49,7 +49,7 @@ export default function SwiperComponent() {
                             [Registration/Scholarship] Information on applying for excellent grades and frontier scholarships for the first semester of 2025
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                        In the first semester of 2025, we will guide you on the application and reception of school scholarships (excellent grades and frontier). Students who want to receive excellent grades and...
+                        In the first semester of 2025, we will guide you on the application and reception of school scholarships (excellent...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -60,7 +60,7 @@ export default function SwiperComponent() {
                             [General] Recruitment of members of the Exercise Health Center in the 4th quarter of 2024
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                        - Target for recruitment: Undergraduate students, professors, faculty and staff at Kwangwoon University - Use period: December 20, 2024 (Mon) to February 28, 2025 (Fri) - Use time: Monday to Friday 10:00...
+                        - Target for recruitment: Undergraduate students, professors, faculty and staff at Kwangwoon University - Use period: December 20, 2024...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -71,7 +71,7 @@ export default function SwiperComponent() {
                             [International Student] Information on the 2nd recruitment written test for undergraduate foreigners in the 1st semester of 2025
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                        Information on the 2nd recruitment of foreigners for the undergraduate college entrance exam for the 1st semester of 2025, 1. Inquiry on who will take the written test:...
+                        Information on the 2nd recruitment of foreigners for the undergraduate college entrance exam for the 1st semester of 2025, 1. Inquiry...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -82,7 +82,7 @@ export default function SwiperComponent() {
                             [Employment-related] [On-the-job training] Information on student participation in the "Gwangwoon Group (virtual company) Winter Internship Program"
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                        [On-the-job training] The "Kwangwoon Group (virtual company) Winter Internship Program" Student Participation Support Team has newly opened...
+                        [On-the-job training] The "Kwangwoon Group (virtual company) Winter Internship Program" Student Participation Support Team...
                         </p>
                     </a>
                 </SwiperSlide>
