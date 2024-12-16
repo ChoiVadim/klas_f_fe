@@ -118,7 +118,7 @@ export default function FAQPage() {
                     <h2 className="font-medium mb-8 mr-10">
                         Most asked questions are here! 
                     </h2>   
-                    <div className="flex flex-col gap-4 md:gap-4 md:mr-16 w-2/3">
+                    <div className="flex flex-col gap-4 md:gap-4 md:mr-16 md:w-2/3">
                         {questions.map((question, index) => {
                                 const isOpen = expanded[index];
                                 return (
