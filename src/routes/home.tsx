@@ -54,16 +54,17 @@ export default function HomePage() {
                 <h2 className="font-bold mb-4 text-card-foreground text-xl">💼 CREDITS</h2>
                 <div className="flex gap-4 md:gap-6">
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
-                    <div className="text-xs md:text-sm text-muted-foreground ">Full Credits</div>
-                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">70/133</div>
+                    <div className="text-xs md:text-sm text-muted-foreground ">Overall</div>
+                    <div className="text-xs md:text-sm text-muted-foreground ">Credits</div>
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">85/133</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
                     <div className="text-xs md:text-sm text-muted-foreground">Major Credits</div>
-                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">24/50</div>
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">43/60</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
                     <div className="text-xs md:text-sm text-muted-foreground">Elective Credits</div>  
-                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">12/30</div>
+                    <div className="text-card-foreground font-bold text-2xl md:text-3xl">42/30</div>
                   </div>
                 </div>
               </div>
@@ -77,21 +78,22 @@ export default function HomePage() {
                 <span className="text-yellow-500">📕</span>
                 <h2 className="font-bold text-card-foreground text-xl">MAIN INFORMATION</h2>
               </div>
-              <div className="flex md:flex-row flex-col gap-4 md:gap-16 pr-4 md:pr-16">
+              <div className="flex md:flex-row flex-col gap-4 md:gap-4">
                 
                 {/*Card 1*/}
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">Credits to go</div>
+                      <div className="font-bold text-card-foreground text-2xl mb-2">Agenda</div>
+                      <div className="font-bold text-card-foreground text-xl mb-0.5">December:</div>
                       <div className="text-base text-muted-foreground text-base">  
-                        Total: 66/133 49.62%<br/>
-                        Major Credits: 20/60 33.33%<br/>
-                        Elective Credits: 46/30<br/>
-                        Average Score: 3.97<br/>
-                        Each semester to take<br/>
-                        Overall: 16.75<br/>
-                        Major Credits: 10.0
+                        Class evaluation: 24.12.02 - 13<br/>
+                        Grades reveal: 24.12.24~<br/>
+                      <div className="font-bold text-card-foreground text-xl mb-0.5">January:</div>
+                        Dormitory application: 25.01.01 - 14<br/>
+                      <div className="font-bold text-card-foreground text-xl mb-0.5">February:</div>
+                        Classes registration: 25.02.15<br/>
+                        All departments: 25.02.19<br/>
                       </div>
                     </div>
                   </div>
@@ -101,15 +103,16 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">Scholarship conditions</div>
-                      <div className="text-base text-muted-foreground text-base">  
-                        100% - GPA 4.3+<br/>
-                        70% - GPA 4.0 - 4.29<br/>
-                        50% - GPA 3.5 - 3.99<br/>
-                        30% - GPA 3.0 - 3.49<br/>
+                      <div className="font-bold text-card-foreground text-2xl mb-2">Credits to go</div>
+                      <div className="text-base text-muted-foreground text-base"> 
+                        Total: 85/133 63.91%<br/>
+                        Major Credits: 43/60 71.67%<br/>
+                        Elective Credits: 42/30 140%<br/>
+                        Average Score: 3.97<br/>
                         <br/>
-                        No scholarship<br/>
-                        GPA is under 3.0
+                      <div className="font-bold text-card-foreground text-xl mb-0.5">Avg. to take per semester:</div>
+                        Overall: 16.00<br/>
+                        Major Credits: 5.66
                       </div>
                     </div>
                   </div>
@@ -119,12 +122,18 @@ export default function HomePage() {
                 <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-xl mb-4">GPA calculator</div>
+                      <div className="font-bold text-card-foreground text-2xl mb-2">Scholarship conditions</div>
                       <div className="text-base text-muted-foreground text-md">  
-                        1. First of all, your TOPIK result must be both valid and 4급. To keep it valid take TOPIK exam once in 1.5 years.<br/>
-                        2.Second, watch your grades. Remember, GPA is an average of all of your grades.<br/>
-                        3. So, to receive a 100% scholarship, you must have 4.3+ GPA; 70% – 4.0 - 4.3; 50% – 3.5 - 4.0 ; 30% – 3.0 - 3.5; no scholarship is when you get average lower than 3.0. <br/>
-                        <a href="https://oia.kw.ac.kr/campus/scholarship.php">More Information</a>
+                        100% - GPA 4.3+<br/>
+                        70% - GPA 4.0 - 4.29<br/>
+                        <span className='text-green-500 font-bold'>50% - GPA 3.5 - 3.99</span><br/>
+                        30% - GPA 3.0 - 3.49<br/>
+                        <br/>
+                        No scholarship<br/>
+                        GPA is under 3.0
+                        <br/>
+                        <br/>
+                        <a href="https://oia.kw.ac.kr/campus/scholarship.php"><em>More Information</em></a>
                       </div>
                     </div>
                   </div>
