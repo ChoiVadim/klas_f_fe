@@ -1,7 +1,9 @@
 import Header from "../components/header";
+import Subjects  from "./subjects";
+import ElectiveS from "./elective";
 import ParticlesBackground from "../components/ui/ParticlesBackground";
 import Sidebar from "../components/sidebar";
-import { Link } from "react-router-dom";
+
 
 export default function TodosPage() {
     return (
@@ -20,85 +22,22 @@ export default function TodosPage() {
                         Subjects
                     </h1>
                     <h2 className="font-medium mb-8 mr-10">
-                        All Information, files and tips about the subjects in one place! 🖐 
+                        All major and elective subjects what you need in one place! 🖐 
                     </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 md:mr-16">
-                        <Link to="/subjects/algorithm" className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    자료구조
-                                </h1>
-                            </div>
-                        </Link>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center text-center">
-                                <h1 className="text-card-foreground text-md font-bold">
-                                    알고리즘
-                                </h1>
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:mr-16">
+                        {/* Major Subjects */}
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:mr-16">
+                            <h1 className="col-span-2 md:col-span-3 text-xl font-bold text-card-foreground">
+                                Major Subjects
+                            </h1>
+                            <Subjects />
                         </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center text-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    프로그래밍
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center text-center">
-                                <h1 className="text-card-foreground text-md font-bold">
-                                    모바일 프로그래밍
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    웹 프로그래밍
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
-                            <div className="flex w-full justify-center items-center">
-                                <h1 className="text-card-foreground text-md font-bold text-center">
-                                    데이터베이스
-                                </h1>
-                            </div>
+                        {/* Elective Subjects */}
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:mr-16">
+                            <h1 className="col-span-2 md:col-span-3 text-xl font-bold text-card-foreground">
+                                Elective Subjects
+                            </h1>
+                            <ElectiveS />
                         </div>
                     </div>
                 </div>
