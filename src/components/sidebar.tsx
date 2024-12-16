@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, FileText, Mail, Settings} from 'lucide-react';
+import { Home, User, Book, HelpCircle } from 'lucide-react';
 
 export default function Sidebar() {
     const location = useLocation();
@@ -17,23 +17,20 @@ export default function Sidebar() {
             </Link>
             <span className={`text-xs font-medium mb-3 ${homeColor}`}>Home</span>      
 
-            {/* Todo */}
-            <Link to="/todos" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${todoColor} z-10`}>
-                <FileText className="w-6 h-6" />
+            <Link to="/mypage" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${todoColor} z-10`}>
+                <User className="w-6 h-6" />
             </Link>
-            <span className={`text-xs font-medium mb-3 ${todoColor}`}>Todo</span>
+            <span className={`text-xs font-medium mb-3 ${todoColor}`}>MyPage</span>
 
-            {/* Chat */}
-            <Link to="/chat" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${chatColor} z-10`}>
-                <Mail className="w-6 h-6" />
+            <Link to="/lectures" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${chatColor} z-10`}>
+                <Book className="w-6 h-6" />
             </Link>
-            <span className={`text-xs font-medium mb-3 ${chatColor}`}>Chat</span>
+            <span className={`text-xs font-medium mb-3 ${chatColor}`}>Lectures</span>
 
-            {/* Settings */}
-            <Link to="/settings" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${settingsColor} z-10`}>
-                <Settings className="w-6 h-6" />
+            <Link to="/faq" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${settingsColor} z-10`}>
+                <HelpCircle className="w-6 h-6" />
             </Link>
-            <span className={`text-xs font-medium mb-3 ${settingsColor}`}>Settings</span>
+            <span className={`text-xs font-medium mb-3 ${settingsColor}`}>FAQ</span>
             
         </div>
     )

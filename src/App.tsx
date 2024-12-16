@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import LoginPage from './routes/login'
 import HomePage from './routes/home'
-import TodosPage from './routes/todos'
-import ChatPage from './routes/chat'
-import SettingsPage from './routes/settings'
+import MyPage from './routes/myPage'
+import LecturesPage from './routes/lectures'
+import FAQPage from './routes/faq'
+
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/todos" element={<TodosPage />} />
-        <Route path="/chat" element={<ChatPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/lectures" element={<LecturesPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/mypage" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,5 +1,5 @@
 import Logo from '../assets/logo.png'
-import { LogOut, Search, Home, FileText, Mail, Settings } from 'lucide-react'
+import { LogOut, Search, Home, User, Book, HelpCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
@@ -52,22 +52,24 @@ export default function Header() {
                 {/* Icons */}
                 <div className="flex items-center align-center w-full justify-between">
                     <div className="flex items-center relative mx-auto"> 
+                        {/* Home */}
                         <Link to="/" className={`p-2 rounded-lg transition-colors flex flex-col items-center ${homeColor} hover:bg-primary-dark z-10`}>
                             <Home className="w-6 h-6" />
                         </Link>
 
-                        {/* Todo */}
-                        <Link to="/todos" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${todoColor} z-10`}>
-                            <FileText className="w-6 h-6" />
+                        {/* My Courses */}
+                        <Link to="/mypage" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${todoColor} z-10`}>
+                            <User className="w-6 h-6" /> {/* Changed to User icon */}
                         </Link>
 
-                        {/* Chat */}
-                        <Link to="/chat" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${chatColor} z-10`}>
-                            <Mail className="w-6 h-6" />
+                        {/* All Courses */}
+                        <Link to="/lectures" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${chatColor} z-10`}>
+                            <Book className="w-6 h-6" /> {/* Changed to Book icon */}
                         </Link>
-                        {/* Settings */}
-                        <Link to="/settings" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${settingsColor} z-10`}>
-                            <Settings className="w-6 h-6" />
+
+                        {/* FAQ */}
+                        <Link to="/faq" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${settingsColor} z-10`}>
+                            <HelpCircle className="w-6 h-6" /> {/* Changed to HelpCircle icon */}
                         </Link>
                         <Search className="w-6 h-6 text-muted-foreground" />
                     </div>

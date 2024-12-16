@@ -1,8 +1,8 @@
 import Header from "../components/header";
-import ParticlesBackground from "../components/ui/ParticlesBackground";
 import Sidebar from "../components/sidebar";
+import ParticlesBackground from "../components/ui/ParticlesBackground";
 
-export default function ChatPage() {
+export default function FAQPage() {
     return (
         <div className="min-h-screen bg-background overflow-hidden">
         <ParticlesBackground />
