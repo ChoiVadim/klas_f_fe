@@ -26,7 +26,7 @@ export default function LecturesPage() {
                     </h2>   
 
                     {/* Buttons */}
-                    <div className="flex flex-col md:flex-row gap-4 mb-10 w-fullmd:w-1/3">
+                    <div className="flex flex-col md:flex-row gap-4 mb-10 w-full md:w-1/3">
                         <button className="w-full bg-primary p-2 px-10 rounded-3xl shadow-md flex items-center justify-center z-10">
                             <Info className="h-6 w-6 mr-2 text-white" />
                             <h1 className="text-white text-center">
