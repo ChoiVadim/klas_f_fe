@@ -9,11 +9,11 @@ export default function FAQPage() {
     const questions = [
         {
             question: "How do I apply for lectures?",
-            answer: "First year students apply as freshmen, others later."
+            answer: "There are 2 different periods of application for classes. 1st one consists of 3 days for different departments. Only 2-4 year students can apply during this period. 2nd one is for 1st year students and lasts for 1 day. You can apply for lectures via Kwangwoon Class Registration program. <a href='https://klas.kw.ac.kr/std/cps/atnlc/LctreReqstNewProgPage.do' target='_blank'>Download here!</a>"
         },
         {
             question: "Can you apply for part payment, what are the conditions?",
-            answer: "Part payment is available only when you have to pay more than 1 mil won, it’s divided by 1 mil; e.g. Gotta pay 1.5 mil -> 1 part: 1 mil, 2 part: 500k"
+            answer: "Part payment is available only if you have to pay more than 1,000,000 KRW. The sum is divided by 1,000,000 KRW; e.g. If your tuition is 1,500,000 this term, the payment is divided into two parts: 1,000,000 KRW and 500,000 KRW. The first part is paid before the semester starts, the second part is paid next month."
         },
         {
             question: "How to pay ?",
@@ -118,7 +118,7 @@ export default function FAQPage() {
                     <h2 className="font-medium mb-8 mr-10">
                         Most asked questions are here! 
                     </h2>   
-                    <div className="flex flex-col gap-4 md:gap-4 md:mr-16 w-2/3">
+                    <div className="flex flex-col gap-4 md:gap-4 md:mr-16 md:w-2/3">
                         {questions.map((question, index) => {
                                 const isOpen = expanded[index];
                                 return (
@@ -137,7 +137,7 @@ export default function FAQPage() {
                                         <div
                                             className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-40" : "max-h-0"}`} // Add transition classes
                                         >
-                                            <p className="text-sm text-muted-foreground p-6 pt-0">{question.answer}</p>
+                                            <div className="text-sm text-muted-foreground p-6 pt-0" dangerouslySetInnerHTML={{ __html: question.answer }}></div>
                                         </div>
                                     </div>
                                 );

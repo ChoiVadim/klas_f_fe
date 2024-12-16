@@ -5,9 +5,9 @@ import { Link, useLocation } from 'react-router-dom';
 export default function Header() {
     const location = useLocation();
     const homeColor = location.pathname === '/' ? 'text-primary' : 'text-muted-foreground';
-    const todoColor = location.pathname === '/todos' ? 'text-primary' : 'text-muted-foreground';
-    const chatColor = location.pathname === '/chat' ? 'text-primary' : 'text-muted-foreground';
-    const settingsColor = location.pathname === '/settings' ? 'text-primary' : 'text-muted-foreground';
+    const todoColor = location.pathname === '/mypage' ? 'text-primary' : 'text-muted-foreground';
+    const chatColor = location.pathname === '/lectures' ? 'text-primary' : 'text-muted-foreground';
+    const settingsColor = location.pathname === '/faq' ? 'text-primary' : 'text-muted-foreground';
     
     return (
         <><div className="hidden md:flex items-center p-2 pl-4 bg-white md:w-full md:justify-between">
@@ -71,7 +71,9 @@ export default function Header() {
                         <Link to="/faq" className={`p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center ${settingsColor} z-10`}>
                             <HelpCircle className="w-6 h-6" /> {/* Changed to HelpCircle icon */}
                         </Link>
-                        <Search className="w-6 h-6 text-muted-foreground" />
+                        <Link to="/search" className="p-2 rounded-lg hover:bg-background transition-colors flex flex-col items-center z-10">
+                            <Search className="w-6 h-6 text-muted-foreground" />
+                        </Link>
                     </div>
                     <div className="flex items-center">
                         <LogOut className="w-6 h-6 text-muted-foreground" />
