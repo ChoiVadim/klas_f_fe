@@ -41,7 +41,7 @@ export default function Header() {
 
         </div><div className="flex md:hidden items-center p-2 bg-white">
                 {/* Logo */}
-                <div className="flex items-center">
+                <div className="flex items-center select-none">
                     <img
                         src={Logo}
                         alt="KLAS-F Logo"

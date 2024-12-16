@@ -54,15 +54,15 @@ export default function HomePage() {
                 <h2 className="font-bold mb-4 text-card-foreground text-xl">💼 CREDITS</h2>
                 <div className="flex gap-4 md:gap-6">
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
-                    <div className="text-xs md:text-sm text-card-foreground ">Full Credits</div>
+                    <div className="text-xs md:text-sm text-muted-foreground ">Full Credits</div>
                     <div className="text-card-foreground font-bold text-2xl md:text-3xl">70/133</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
-                    <div className="text-xs md:text-sm text-card-foreground">Major Credits</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">Major Credits</div>
                     <div className="text-card-foreground font-bold text-2xl md:text-3xl">24/50</div>
                   </div>
                   <div className="bg-card p-4 rounded-lg shadow-md text-center w-1/3 md:w-[200px] aspect-square flex flex-col justify-center z-10">
-                    <div className="text-xs md:text-sm text-card-foreground">Elective Credits</div>  
+                    <div className="text-xs md:text-sm text-muted-foreground">Elective Credits</div>  
                     <div className="text-card-foreground font-bold text-2xl md:text-3xl">12/30</div>
                   </div>
                 </div>
@@ -119,12 +119,10 @@ export default function HomePage() {
                     <div>
                       <div className="font-bold text-card-foreground text-xl mb-4">How to get good scholarship?</div>
                       <div className="text-base text-muted-foreground text-md">  
-                        Credits: 66/133 49.62%<br/>
-                        Major Credits: 20/60 33.33%<br/>
-                        Elective Credits: 46/30<br/>
-                        Average Score: 3.97<br/>
-                        Credits for each semesters: 16.75<br/>
-                        Major Credits for each semesters: 10.0
+                        1. First of all, your TOPIK result must be both valid and 4급. To keep it valid take TOPIK exam once in 1.5 years.<br/>
+                        2.Second, watch your grades. Remember, GPA is an average of all of your grades.<br/>
+                        3. So, to receive a 100% scholarship, you must have 4.3+ GPA; 70% – 4.0 - 4.3; 50% – 3.5 - 4.0 ; 30% – 3.0 - 3.5; no scholarship is when you get average lower than 3.0. <br/>
+                        <a href="https://oia.kw.ac.kr/campus/scholarship.php">More Information</a>
                       </div>
                     </div>
                   </div>
