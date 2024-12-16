@@ -23,7 +23,7 @@ export default function Header() {
 
             {/* Search Bar */}
             <div className="flex-1">
-                <div className="relative w-1/3 mx-auto">
+                <div className="relative w-1/3 mx-auto select-none">
                     <input
                         type="text"
                         placeholder="Search courses"

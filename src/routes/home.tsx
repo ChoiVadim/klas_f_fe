@@ -78,39 +78,67 @@ export default function HomePage() {
                 <span className="text-yellow-500">📕</span>
                 <h2 className="font-bold text-card-foreground text-xl">MAIN INFORMATION</h2>
               </div>
-              <div className="flex md:flex-row flex-col gap-4 md:gap-4">
+              <div className="flex md:flex-row flex-col gap-4 md:gap-4 mr-4 md:mr-4">
                 
                 {/*Card 1*/}
-                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
+                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center max-h-96  z-10 md:w-1/2">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-2">Agenda</div>
-                      <div className="font-bold text-card-foreground text-xl mb-0.5">December:</div>
-                      <div className="text-base text-muted-foreground text-base">  
-                        Class evaluation: 24.12.02 - 13<br/>
-                        Grades reveal: 24.12.24~<br/>
-                      <div className="font-bold text-card-foreground text-xl mb-0.5">January:</div>
-                        Dormitory application: 25.01.01 - 14<br/>
-                      <div className="font-bold text-card-foreground text-xl mb-0.5">February:</div>
-                        Classes registration: 25.02.15<br/>
-                        All departments: 25.02.19<br/>
+
+                      <div className="font-bold text-card-foreground text-2xl mb-4">Important dates 📆</div>
+                      <div className="grid grid-cols-3 text-base text-muted-foreground gap-4">
+                        <div className="col-span-1 text-card-foreground text-xl">December</div>
+                        <div className="col-span-2">
+                          <div className="flex flex-col">
+                            <div className="flex items-center">
+                              <div>24.12.02</div>
+                              <div className="ml-2">Class evaluation</div>
+                            </div>
+                            <div className="flex items-center">
+                              <div>24.12.24</div>
+                              <div className="ml-2">Grades reveal</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-span-1 text-card-foreground text-xl">January</div>
+                        <div className="col-span-2">
+                          <div className="flex flex-col">
+                            <div className="flex items-center">
+                              <div>25.01.01</div>
+                              <div className="ml-2">Dormitory application</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-span-1 text-card-foreground text-xl">February</div>
+                        <div className="col-span-2">
+                          <div className="flex flex-col">
+                            <div className="flex items-center">
+                              <div>25.02.15</div>
+                              <div className="ml-2">Classes registration</div>
+                            </div>
+                            <div className="flex items-center">
+                              <div>25.02.19</div>
+                              <div className="ml-2">All departments</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/*Card 2*/}
-                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
+                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center  max-h-96 z-10 md:w-1/2">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-2">Credits to go</div>
+                      <div className="font-bold text-card-foreground text-2xl mb-4">Credits to graduate 📚</div>
                       <div className="text-base text-muted-foreground text-base"> 
                         Total: 85/133 63.91%<br/>
                         Major Credits: 43/60 71.67%<br/>
                         Elective Credits: 42/30 140%<br/>
                         Average Score: 3.97<br/>
                         <br/>
-                      <div className="font-bold text-card-foreground text-xl mb-0.5">Avg. to take per semester:</div>
+                      <div className="text-card-foreground font-bold mb-0.5">Avg. to take per semester 📊</div>
                         Overall: 16.00<br/>
                         Major Credits: 5.66
                       </div>
@@ -119,21 +147,33 @@ export default function HomePage() {
                 </div>
 
                 {/*Card 3*/}
-                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center aspect-square max-h-96 z-10">
+                <div className="bg-card p-6 rounded-3xl shadow-md flex items-center  max-h-96 z-10">
                   <div className="flex items-center">
                     <div>
-                      <div className="font-bold text-card-foreground text-2xl mb-2">Scholarship conditions</div>
-                      <div className="text-base text-muted-foreground text-md">  
-                        100% - GPA 4.3+<br/>
-                        70% - GPA 4.0 - 4.29<br/>
-                        <span className='text-green-500 font-bold'>50% - GPA 3.5 - 3.99</span><br/>
-                        30% - GPA 3.0 - 3.49<br/>
+                      <div className="font-bold text-card-foreground text-2xl mb-2">Scholarship 🎉</div>
+                      <div className="text-base text-muted-foreground text-base">  
+                        <div className="grid grid-cols-1">
+                          <div className="grid grid-cols-4">
+                            <div className="col-span-1">100%</div>
+                            <div className="col-span-3">GPA 4.3+</div>
+                          </div>
+                          <div className="grid grid-cols-4">
+                            <div className="col-span-1">80%</div>
+                            <div className="col-span-3">GPA 4.0 - 4.29</div>
+                          </div>
+                          <div className="grid grid-cols-4">
+                            <div className="col-span-1">50%</div>
+                            <div className="col-span-3">GPA 3.5 - 3.99</div>
+                          </div>
+                          <div className="grid grid-cols-4">
+                            <div className="col-span-1">30%</div>
+                            <div className="col-span-3">GPA 3.0 - 3.49</div>
+                          </div>
+                        </div>
                         <br/>
-                        No scholarship<br/>
-                        GPA is under 3.0
+                        Your GPA is 3.97 you will get 50% scholarship next semester!<br/>
                         <br/>
-                        <br/>
-                        <a href="https://oia.kw.ac.kr/campus/scholarship.php"><em>More Information</em></a>
+                        <a href="https://oia.kw.ac.kr/campus/scholarship.php" target="_blank" className='text-primary text-sm underline'>More Information...</a>
                       </div>
                     </div>
                   </div>
