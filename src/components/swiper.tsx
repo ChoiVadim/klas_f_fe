@@ -22,12 +22,45 @@ export default function SwiperComponent() {
             >
                 
                 <SwiperSlide className="h-full">
-                    <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
+                    <a href="https://www.kw.ac.kr/ko/life/notice.jsp?BoardMode=view&DUID=48539" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
                         <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
+                            [International Students] Information on refund of regular TOPIK II application fees for the 2024-2 semester
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
+                        1. Subject to application: TOPIK II applicants for the second semester of 2024 among foreign students (undergraduate and graduate students) of this school...
+                        </p>
+                    </a>
+                </SwiperSlide>
+
+                <SwiperSlide className="h-full">
+                    <a href="https://www.kw.ac.kr/ko/life/notice.jsp?BoardMode=view&DUID=48530" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
+                        <h1 className="text-card-foreground text-base font-bold mb-2">
+                            [Bachelor] Announcement of the grade processing period for the second semester of 2024
+                        </h1>
+                        <p className="text-muted-foreground text-sm">
+                            Announcement of the Second Semester of 2024 The second semester of 2024 will be announced as follows. 1. Final Exam Period: December 09 (Mon) to December 20 (Fri) 2024...
+                        </p>
+                    </a>
+                </SwiperSlide>
+
+                <SwiperSlide className="h-full">
+                    <a href="https://www.kw.ac.kr/ko/life/notice.jsp?BoardMode=view&DUID=48491" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
+                        <h1 className="text-card-foreground text-base font-bold mb-2">
+                            [Registration/Scholarship] Information on applying for excellent grades and frontier scholarships for the first semester of 2025
+                        </h1>
+                        <p className="text-muted-foreground text-sm">
+                        In the first semester of 2025, we will guide you on the application and reception of school scholarships (excellent grades and frontier). Students who want to receive excellent grades and...
+                        </p>
+                    </a>
+                </SwiperSlide>
+
+                <SwiperSlide className="h-full">
+                    <a href="https://www.kw.ac.kr/ko/life/notice.jsp?BoardMode=view&DUID=48691" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
+                        <h1 className="text-card-foreground text-base font-bold mb-2">
+                            [General] Recruitment of members of the Exercise Health Center in the 4th quarter of 2024
+                        </h1>
+                        <p className="text-muted-foreground text-sm">
+                        - Target for recruitment: Undergraduate students, professors, faculty and staff at Kwangwoon University - Use period: December 20, 2024 (Mon) to February 28, 2025 (Fri) - Use time: Monday to Friday 10:00...
                         </p>
                     </a>
                 </SwiperSlide>
@@ -35,54 +68,21 @@ export default function SwiperComponent() {
                 <SwiperSlide className="h-full">
                     <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
                         <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
+                            [International Student] Information on the 2nd recruitment written test for undergraduate foreigners in the 1st semester of 2025
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
+                        Information on the 2nd recruitment of foreigners for the undergraduate college entrance exam for the 1st semester of 2025, 1. Inquiry on who will take the written test:...
                         </p>
                     </a>
                 </SwiperSlide>
 
                 <SwiperSlide className="h-full">
-                    <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
+                    <a href="https://www.kw.ac.kr/ko/life/job.jsp?BoardMode=view&DUID=48537" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
                         <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
+                            [Employment-related] [On-the-job training] Information on student participation in the "Gwangwoon Group (virtual company) Winter Internship Program"
                         </h1>
                         <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                        </p>
-                    </a>
-                </SwiperSlide>
-
-                <SwiperSlide className="h-full">
-                    <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
-                        <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                        </h1>
-                        <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                        </p>
-                    </a>
-                </SwiperSlide>
-
-                <SwiperSlide className="h-full">
-                    <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
-                        <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                        </h1>
-                        <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
-                        </p>
-                    </a>
-                </SwiperSlide>
-
-                <SwiperSlide className="h-full">
-                    <a href="https://www.kw.ac.kr/en/life/notice.jsp?BoardMode=view&DUID=47953" target="_blank" rel="noopener noreferrer" className="bg-card p-6 rounded-3xl shadow-lg w-full flex flex-col justify-center h-full">
-                        <h1 className="text-card-foreground text-base font-bold mb-2">
-                            [Undergraduate] Notice on the 2024 Second Semester Midterm Exam Schedule and Guidelines
-                        </h1>
-                        <p className="text-muted-foreground text-sm">
-                            The midterm exam schedule and guidelines for the 2024 second semester have been announced. Please check the details on the official website.
+                        [On-the-job training] The "Kwangwoon Group (virtual company) Winter Internship Program" Student Participation Support Team has newly opened...
                         </p>
                     </a>
                 </SwiperSlide>
